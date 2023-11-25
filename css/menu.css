@@ -1,0 +1,28 @@
+
+
+.item__header {
+    display: flex;
+    align-items: baseline;
+}
+.item__title {
+    font: 35px cookie, cursive;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.item__dots {
+    flex: 1;
+    border-bottom: 1px dashed #aaa;
+    margin: 0 15px;
+}
+.item__price {
+    font: 31px cookie, cursive;
+}
+.item__description {
+    margin-bottom: 40px;
+}
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}

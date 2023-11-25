@@ -1,0 +1,47 @@
+
+ #rezerv div.elem-group {
+    margin: 20px 0;
+  }
+  
+  #rezerv div.elem-group.inlined {
+     width: 49%;
+    display: inline-block;
+    margin-left: 1%;
+  }
+  
+  #rezerv label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 10px;
+    font-size: 1.25em;
+  }
+  
+  #rezerv input,  #rezerv select,  #rezerv textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    width: 100%;
+    padding: 10px;
+  }
+  
+  #rezerv div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+  }
+  
+#rezerv textarea {
+    height: 250px;
+  }
+  
+  #rezerv  hr {
+    border: 1px dotted #ccc;
+  }
+
+  #rezerv .btn{
+    width: 10%;
+  }
+  
+
+  
