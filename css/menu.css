@@ -7,7 +7,9 @@
 .item__title {
     font: 35px cookie, cursive;
     letter-spacing: 2px;
+    background-color: red;
     margin: 0;
+    animation: boja 2s infinite ease-out alternate;
 }
 .item__dots {
     flex: 1;
@@ -15,7 +17,9 @@
     margin: 0 15px;
 }
 .item__price {
+    position: relative;
     font: 31px cookie, cursive;
+    animation: pomeri 2s infinite forwards ease-in-out;
 }
 .item__description {
     margin-bottom: 40px;
@@ -26,3 +30,68 @@
     flex-wrap: wrap;
     margin-bottom: 35px;
 }
+
+
+@keyframes pomeri {
+
+    0%,100%{
+
+        top:0;
+        color: gold;
+      
+
+    }
+
+    50%{
+    top:-20px;
+    color:brown;
+    }
+    
+}
+
+
+
+
+
+
+
+@keyframes pomeri2 {
+
+    0%,100%{
+
+        top:0;
+        color: gold;
+      
+
+    }
+
+    50%{
+    top:-10px;
+    color:brown;
+    }
+    
+}
+
+
+
+
+
+@keyframes boja {
+
+    
+0%{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+100%{
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+
+
+}
+
+
