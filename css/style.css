@@ -226,13 +226,13 @@ h1:hover {
 .pictureAutor {
 
   width: 50%;
-  background-image: url("../img/Slika autora.jpg");
+  background-image: url("../img/Slika autora.JPG");
   background-size: cover;
 }
 
 .picture-bg{
   width: 50%;
-  background-image: url("../img/slika 1.JPG");
+  background-image: url("../img/slika 1.jpg");
   background-size: cover;
 }
 
