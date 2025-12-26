@@ -1,4 +1,6 @@
-
+.spotlight{
+  height: 86px!important;
+}
 #galerija p {
     height: 200px;
     width: 500px;

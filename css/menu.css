@@ -1,4 +1,6 @@
-
+.spotlight{
+    height: 86px;
+}
 
 .item__header {
     display: flex;

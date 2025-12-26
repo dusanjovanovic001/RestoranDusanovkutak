@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 
 <head>
     <meta charset="UTF-8">
@@ -13,46 +13,51 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/rezerv.css">
+    <link rel="icon" href="img/ikona.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
 </head>
 
 <body id="home" class="bg-light ">
     <div class="wrapper">
         <div class="spotlight">
             <header class="p-1 bg-dark">
-                <div class="logo">
-                    <span><span class="gold"><i class="fa-solid fa-utensils"></i>Restoran</span> Dušanov
-                        kutak</span>
-                </div>
+                <a href="index.html">
+                         <div class="logo">
+                              <span>
+                                   <span class="gold">
+                                        <i class="fa-solid fa-utensils"></i>
+                                        Restoran
+                                   </span> 
+                                   <span class="white-font">Dušanov kutak
+                                   </span>
+                              </span>
+                         </div>
+                </a>
                 <nav>
                     <ul>
-                        <li><a href="index.html#home">Početna</a></li>
-                        <li><a href="index.html#about">O nama</a></li>
-                        <li><a href="meni.html">Meni</a></li>
-                        <li><a href="index.html#specijaliteti">Specijaliteti</a></li>
-                        <li><a href="galerija.html">Galerija</a></li>
-                        <li><a href="rezervacija.html">Rezervacija</a></li>
-                        <li><a href="index.html#con">Kontakt</a></li>
-                        <li><a href="autor.html">O autoru</a></li>
+                          <li><a href="index.html#home">Početna</a></li>
+                          <li><a href="index.html#specijaliteti">Specijaliteti</a></li>
+                          <li><a href="index.html#about">O nama</a></li>
+                          <li><a href="index.html#con">Kontakt</a></li>
+                          <li><a href="meni.html">Meni</a></li>
+                          <li><a href="galerija.html">Galerija</a></li>
+                          <li><a href="rezervacija.html">Rezervacija</a></li>
+                          <li><a href="autor.html">O autoru</a></li>
+                          <li><a href="https://drive.google.com/file/d/16723FRwwZA0bhDlSreyT0Ic08VJqeG6B/view?usp=sharing">ZIP</a></li>
                     </ul>
                 </nav>
             </header>
-            <div class="showcase">
-                <div class="wrapp p-3">
-                    <h1 class="main-heading ">Restoran Dušanov kutak</h1>
-                    <p class="p-1">Savršena kombinacija najkvalitetnijeg mesa, probranih vina i izvanredne usluge
-                        <br> "Nema iskrenije ljubavi od ljubavi prema hrani"
-                    </p>
-                    <a href="meni.html" class="btn ">Meni</a>
-                </div>
-            </div>
+            
         </div>
         <div id="rezerv" class="p-2">
             <h2 class="text-centre second-heading"><span class="gold">Rezervacija</span></h2>
 
-            <form>
+            <form action="#" method="post">
                 <div class="elem-group">
                     <label for="name">Vaše ime</label>
-                    <input type="text" id="name" name="visitor_name" placeholder="Petar Petrović" pattern=[A-Z\sa-z]{3,20}
+                    <input type="text" id="name" name="visitor_name" placeholder="Petar Petrović" pattern="[A-Za-z]{3,20}\s[A-Za-z]{3,20}"
                         required>
                 </div>
                 <div class="elem-group">
@@ -61,8 +66,8 @@
                 </div>
                 <div class="elem-group">
                     <label for="phone">Vaš kontakt telefon</label>
-                    <input type="tel" id="phone" name="visitor_phone" placeholder="063-9944-382"
-                        pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                    <input type="tel" id="phone" name="visitor_phone" placeholder="063/994-4382"
+                        pattern="[0-9]{3}\/[0-9]{3}-[0-9]{3,4}" required>
                 </div>
                 <hr>
                 <div class="elem-group inlined">
@@ -79,7 +84,7 @@
                 </div>
                 <div class="elem-group inlined">
                     <label for="checkout-date">Vreme dolaska</label>
-                    <input type="time" id="Vreme" name="Vreme" required>
+                    <input type="time" id="checkout-date" name="checkout-date" required>
                 </div>
                 <hr>
                 <div class="elem-group">
@@ -87,40 +92,12 @@
                     <textarea id="message" name="visitor_message"
                         placeholder="Recite nam još nešto što bi moglo biti važno." required></textarea>
                 </div>
-                <button class="btn">REZERVIŠITE STO</button>
+                <button class="btn">REZERVIŠITE STO <i class="fa-solid fa-check"></i></button>
             </form>
         </div>
-        <div id="con" class="p-2">
-            <div class="contact p-1">
-                <h2 class="second-heading">Kontaktirajte nas</h2>
-                    <form>
-                         <div class="form-element">
-                              <label>Ime:</label>
-                              <input type="text" id="name" placeholder="Unesite ime">
-                         </div>
-                         <div class="form-element">
-                              <label>Email:</label>
-                              <input type="text" id="email" placeholder="Unesite mail">
-                         </div>
-                         <div class="form-element">
-                              <label>Broj telefona:</label>
-                              <input type="text" id="phone" placeholder="Unesite broj telefona">
-                         </div>
-                         <div class="form-element">
-                              <label>Poruka:</label>
-                              <textarea id="textMessage" id="" cols="30" rows="10"></textarea>
-                         </div>
-                         <div class="form-element">
-                              <button class="btn btn-dark send ">Pošaljite</button>
-                         </div>
-                </form>
-            </div>
-            <div class="picture-bg">
-                    
-            </div>
-        </div>
+       
         <footer class="bg-dark p-1 text-centre">
-            <p>Copyright by Dusan</p>
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> by Dusan</p>
         </footer>
 
     </div>

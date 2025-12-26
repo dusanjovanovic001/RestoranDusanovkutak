@@ -1,17 +1,26 @@
+.spotlight{
+  height: 86px;
+}
+#rezerv{
+  width: 600px;
+  margin: 30px auto;
+  background: #CCC;
+  background: linear-gradient(103deg, rgba(204, 204, 204, 1) 0%, rgba(238, 238, 238, 1) 50%);
+  
+}
 
  #rezerv div.elem-group {
     margin: 20px 0;
   }
   
   #rezerv div.elem-group.inlined {
-     width: 49%;
+     width: 100%;
     display: inline-block;
-    margin-left: 1%;
   }
   
   #rezerv label {
     display: block;
-    font-family: 'Nanum Gothic';
+    font-family: "Didact Gothic", sans-serif;
     padding-bottom: 10px;
     font-size: 1.25em;
   }
@@ -21,18 +30,20 @@
     border: 2px solid #777;
     box-sizing: border-box;
     font-size: 1.25em;
-    font-family: 'Nanum Gothic';
+    font-family: "Didact Gothic", sans-serif;
     width: 100%;
     padding: 10px;
   }
   
   #rezerv div.elem-group.inlined input {
-    width: 95%;
+    width:100%;
     display: inline-block;
   }
   
 #rezerv textarea {
-    height: 250px;
+    min-height: 250px;
+    max-width: 100%; 
+    min-width: 100%;
   }
   
   #rezerv  hr {
@@ -40,8 +51,15 @@
   }
 
   #rezerv .btn{
-    width: 10%;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.25em;
+    cursor: pointer;
+    opacity: 0.8;
   }
-  
-
-  
+ #rezerv .btn:hover{
+  opacity: 1;
+ }
+.fa-check{
+  margin-left: 10px;
+}
