@@ -1,2 +1,2 @@
 # RestoranDusanovkutak
-Restoran u srcu Pancevu
+Restoran u srcu Panceva
