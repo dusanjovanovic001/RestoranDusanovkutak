@@ -1,0 +1,427 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0.75rem;
+  line-height: 1.5rem;
+}
+
+.fa-utensils{
+  margin-right: 10px;
+}
+
+.gold {
+  color: #e6a720;
+}
+.white-font{
+  color: #fff;
+}
+.text-centre {
+  text-align: center;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333333;
+}
+
+.bg-dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.main-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.second-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  padding: 0.5rem 2rem;
+  background-color: #e6a720;
+  border: none;
+  border-radius: 5px;
+  opacity: 0.8;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.btn:hover{
+  opacity: 1;
+}
+.btn-dark {
+  background-color: #333333;
+  color: white;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+/* --------------------------------------------- */
+
+.spotlight {
+  height: 100vh;
+  background-image: url(../img/vetrenjaca.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.o-autoru .spotlight{
+  height: 86px;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  opacity: 0.8;
+  position: fixed;
+  z-index: 1;
+}
+
+
+
+.logo {
+  font-size: 2rem;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  padding: 0 0.75rem;
+}
+
+header nav ul li a {
+  color: white;
+}
+
+header nav ul li a:hover {
+  color: #44c531;
+}
+
+.showcase {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h1 {
+
+  transition: all 0.5s;
+}
+
+.wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 60%;
+}
+
+.showcase p {
+  color: white;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  margin: 3rem 0;
+  font-style: italic;
+
+}
+
+.main-heading:hover {
+  text-shadow: 0 0 10px #e6a720;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.articles {
+  width: 30%;
+  display: flex;
+}
+
+.articles .icon {
+  display: flex;
+  align-items: center;
+  width: 15%;
+
+}
+.articles .text{
+  width: 85%;
+}
+
+.articles .icon img {
+
+  width: 100%;
+  border-radius: 50%;
+  transition: width 1s;
+}
+
+.articles .icon img:hover {
+
+  width: 145%;
+
+
+}
+
+
+
+#about {
+  display: flex;
+}
+
+.picture {
+  width: 50%;
+  background-image: url("../img/onama.jpg");
+  background-size: cover;
+}
+
+.pictureAutor {
+
+  width: 50%;
+  background-image: url("../img/slika-autora.jpg");
+  background-size: cover;
+}
+
+.picture-bg{
+  width: 50%;
+  background-image: url("../img/slika-1.jpg");
+  background-size: cover;
+}
+
+.data {
+  width: 50%;
+  padding: 12rem 3rem;
+}
+
+.data p {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+
+#con {
+  display: flex;
+  width: 90%;
+  margin: 2rem auto;
+
+}
+#con label{
+  margin-bottom: 5px;
+}
+.contact {
+  width: 50%;
+  background-color: #44c531;
+  color: white;
+  border-radius: 30%;
+  text-align: center;
+  margin: 2rem;
+
+
+}
+
+
+input,
+button,
+textarea {
+  width: 80%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+}
+
+.contact label {
+  display: block;
+  width: 100%;
+}
+
+.form-element {
+  margin-bottom: 0.75rem;
+}
+
+#map{    
+  background-color: #333333;
+}
+#map iframe{
+  max-width: 100%;
+}
+@media screen and (max-width: 1024px) {
+
+  .container {
+    flex-direction: column;
+  }
+
+  .articles {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  #who {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .picture {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .data {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  header nav {
+    margin-top: 2%;
+  }
+
+
+  header nav ul {
+
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    text-align: center;
+    padding: 10px 10px;
+  }
+
+
+
+
+  .spotlight {
+    height: 140vh;
+  }
+
+  .main-heading {
+    font-size: 1.5rem;
+  }
+
+
+
+  .showcase p {
+    display: none;
+  }
+
+
+
+
+
+  .client-img img:last-child {
+    display: none;
+  }
+
+  #con,
+  #contactn,
+  #about {
+    flex-direction: column;
+  }
+
+  .item{
+
+    border: 2px solid gold;
+    animation: pomeri 2 2s;
+    
+  }
+  #galerija img {
+
+height: 50%;
+width: 50%;
+
+
+
+border-top-right-radius: 20px;
+
+
+
+  }
+
+
+
+  
+  #galerija img:hover {
+    transform: scale(2);
+    offset-path: path('m 5 65 q 45-0 45-0 t 90 0 90 0 90-0 90 0');
+    box-shadow: 3px 4px 10px #0006;
+    z-index: 999;
+  }
+
+
+
+
+
+
+
+  .contact {
+    width: 100%;
+  }
+
+  
+}
